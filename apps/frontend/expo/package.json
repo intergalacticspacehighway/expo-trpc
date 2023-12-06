@@ -1,0 +1,30 @@
+{
+  "name": "drakula",
+  "version": "1.0.0",
+  "main": "./index.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@expo/webpack-config": "^19.0.0",
+    "@repo/trpc-config": "*",
+    "@tanstack/react-query": "^4.0.0",
+    "@trpc/client": "^10.44.1",
+    "@trpc/react-query": "^10.44.1",
+    "expo": "~49.0.15",
+    "expo-status-bar": "~1.6.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-native": "0.72.6",
+    "react-native-web": "~0.19.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.2.14",
+    "typescript": "^5.1.3"
+  },
+  "private": true
+}
