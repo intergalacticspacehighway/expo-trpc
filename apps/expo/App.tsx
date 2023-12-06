@@ -1,8 +1,8 @@
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import { httpBatchLink } from '@trpc/client';
-import React, { useState } from 'react';
-import { trpc } from './utils/trpc';
-import { Text } from 'react-native';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { httpBatchLink } from "@trpc/client";
+import React, { useState } from "react";
+import { trpc } from "./utils/trpc";
+import { Text } from "react-native";
 
 function App() {
   const [queryClient] = useState(() => new QueryClient());
@@ -10,7 +10,7 @@ function App() {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: 'http://localhost:3000/api/trpc',
+          url: "http://localhost:3000/api/trpc",
 
           // You can pass any HTTP headers you wish here
           async headers() {
@@ -20,7 +20,7 @@ function App() {
           },
         }),
       ],
-    }),
+    })
   );
 
   return (
@@ -34,9 +34,9 @@ function App() {
 
 const TestComp = () => {
   const userQuery = trpc.hello.useQuery({
-    text: "hello"
+    text: "hello",
   });
 
-  return <Text>{userQuery.data?.greeting}</Text>
-}
+  return <Text>{userQuery.data?.greeting}</Text>;
+};
 export default App;
