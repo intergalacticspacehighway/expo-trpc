@@ -10,10 +10,14 @@
 
 # Start local server
 
-- cd apps/next
-- yarn dev
+```bash
+cd apps/next
+yarn dev
+```
 
 # Start web app
 
-- cd apps/expo
-- yarn web
+```bash
+cd apps/expo
+yarn web
+```
