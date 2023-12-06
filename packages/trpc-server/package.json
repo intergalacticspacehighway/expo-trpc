@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "exports": {
-    "./server": "./server/routers/_app.ts"
+    "./server": "./routers/_app.ts"
   },
   "dependencies": {
     "@trpc/server": "^10.44.1",
