@@ -1,6 +1,6 @@
-# tRPC, expo, next api server monorepo
+# tRPC, Next api server expo universal app monorepo
 
-- `apps/expo` - Native/Web app with @tanstack/react-query and trpc query hooks
+- `apps/expo` - Universal app with @tanstack/react-query and trpc query hooks
 - `apps/next` - trpc router middleware
 - `packages/trpc-server` - trpc routers and procedures
 
