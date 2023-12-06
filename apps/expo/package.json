@@ -11,9 +11,9 @@
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
     "@repo/trpc-server": "*",
-    "@tanstack/react-query": "^4.0.0",
-    "@trpc/client": "^10.44.1",
-    "@trpc/react-query": "^10.44.1",
+    "@tanstack/react-query": "^5.12.2",
+    "@trpc/client": "next",
+    "@trpc/react-query": "next",
     "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "react": "18.2.0",

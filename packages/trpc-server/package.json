@@ -6,7 +6,7 @@
     "./server": "./routers/_app.ts"
   },
   "dependencies": {
-    "@trpc/server": "^10.44.1",
+    "@trpc/server": "next",
     "zod": "^3.22.4"
   }
 }
