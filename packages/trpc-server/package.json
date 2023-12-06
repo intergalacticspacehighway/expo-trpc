@@ -1,5 +1,5 @@
 {
-  "name": "@repo/trpc-config",
+  "name": "@repo/trpc-server",
   "version": "0.0.0",
   "private": true,
   "exports": {

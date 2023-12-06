@@ -1,6 +1,6 @@
 import type { NextApiHandler, NextApiRequest, NextApiResponse } from 'next';
-import { trpcNext } from '@repo/trpc-config/server';
-import { appRouter } from '@repo/trpc-config/server';
+import { trpcNext } from '@repo/trpc-server/server';
+import { appRouter } from '@repo/trpc-server/server';
 import Cors from 'cors';
 const cors = Cors();
 

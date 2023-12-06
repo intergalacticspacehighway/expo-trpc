@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@expo/webpack-config": "^19.0.0",
-    "@repo/trpc-config": "*",
+    "@repo/trpc-server": "*",
     "@tanstack/react-query": "^4.0.0",
     "@trpc/client": "^10.44.1",
     "@trpc/react-query": "^10.44.1",
