@@ -10,7 +10,7 @@ function App() {
     trpc.createClient({
       links: [
         httpBatchLink({
-          url: "http://localhost:3000/api/trpc",
+          url: "http://localhost:8081/api/trpc",
 
           // You can pass any HTTP headers you wish here
           async headers() {
