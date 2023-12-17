@@ -1,19 +1,11 @@
-# tRPC, Next api server expo universal app monorepo
+# tRPC, expo universal app monorepo
 
 - `apps/expo` - Universal app with @tanstack/react-query and trpc query hooks
-- `apps/next` - trpc router middleware
 - `packages/trpc-server` - trpc routers and procedures
 
 # Installation
 
 - Go to the root directory and run `yarn` to install dependencies.
-
-# Start local server
-
-```bash
-cd apps/next
-yarn dev
-```
 
 # Start web app
 
