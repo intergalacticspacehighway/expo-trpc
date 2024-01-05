@@ -13,3 +13,17 @@
 cd apps/expo
 yarn web
 ```
+
+# Start iOS app
+
+```bash
+cd apps/expo
+yarn ios
+```
+
+# Start android app
+
+```bash
+cd apps/expo
+yarn android
+```
