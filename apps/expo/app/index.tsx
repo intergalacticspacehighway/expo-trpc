@@ -2,7 +2,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { httpBatchLink } from "@trpc/client";
 import React, { useState } from "react";
 import { trpc } from "../utils/trpc";
-import { Text } from "react-native";
+import { Button, Text } from "react-native";
 
 function App() {
   const [queryClient] = useState(() => new QueryClient());
@@ -41,15 +41,15 @@ const TestComp = () => {
   return (
     <>
       <Text>{userQuery.data?.greeting}</Text>
-      <button
-        onClick={async () => {
+      <Button
+        title="Test mutation"
+        onPress={async () => {
           const greeting = await echoMutate.mutateAsync({
-            text: "is anyone there?",
+            text: "hello anyone there?",
           });
+          alert(greeting.greeting);
         }}
-      >
-        Test mutation
-      </button>
+      />
     </>
   );
 };
