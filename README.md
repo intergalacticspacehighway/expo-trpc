@@ -1,7 +1,8 @@
-# tRPC, expo universal app monorepo
+# Universal Expo tRPC
 
-- `apps/expo` - Universal app with @tanstack/react-query and trpc query hooks
-- `packages/trpc-server` - trpc routers and procedures
+- `apps/expo` - Universal frontend app with `@tanstack/react-query`, tRPC and expo-router.
+- `apps/expo/app/api/trpc/[trpc]+api.ts` - Expo API route with tRPC route handlers.
+- `packages/trpc-server` - tRPC routers and procedures.
 
 ### Installation
 
