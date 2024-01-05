@@ -34,9 +34,23 @@ function App() {
 
 const TestComp = () => {
   const userQuery = trpc.hello.useQuery({
-    text: "hello",
+    text: "world",
   });
+  const echoMutate = trpc.echo.useMutation();
 
-  return <Text>{userQuery.data?.greeting}</Text>;
+  return (
+    <>
+      <Text>{userQuery.data?.greeting}</Text>
+      <button
+        onClick={async () => {
+          const greeting = await echoMutate.mutateAsync({
+            text: "is anyone there?",
+          });
+        }}
+      >
+        Test mutation
+      </button>
+    </>
+  );
 };
 export default App;

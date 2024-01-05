@@ -6,7 +6,9 @@
     "start": "EXPO_USE_METRO_WORKSPACE_ROOT=1 expo start",
     "android": "EXPO_USE_METRO_WORKSPACE_ROOT=1 expo start --android",
     "ios": "EXPO_USE_METRO_WORKSPACE_ROOT=1 expo start --ios",
-    "web": "EXPO_USE_METRO_WORKSPACE_ROOT=1 expo start --web"
+    "web": "EXPO_USE_METRO_WORKSPACE_ROOT=1 expo start --web",
+    "build:web": "EXPO_USE_METRO_WORKSPACE_ROOT=1 npx expo export -p web --dump-sourcemap",
+    "analyze:web": "yarn build:web && cd dist/client/_expo/static/js/web && source-map-explorer *.js *.js.map"
   },
   "dependencies": {
     "@repo/trpc-server": "*",
@@ -26,6 +28,7 @@
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@types/react": "~18.2.45",
+    "source-map-explorer": "^2.5.3",
     "typescript": "^5.1.3"
   },
   "private": true

@@ -11,7 +11,18 @@ export const appRouter = router({
     )
     .query((opts) => {
       return {
-        greeting: `goodbye ${opts.input.text}`,
+        greeting: `Hello ${opts.input.text}`,
+      };
+    }),
+  echo: procedure
+    .input(
+      z.object({
+        text: z.string(),
+      })
+    )
+    .mutation((opts) => {
+      return {
+        greeting: `echo: ${opts.input.text}`,
       };
     }),
 });
