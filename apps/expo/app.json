@@ -3,6 +3,7 @@
     "name": "drakula",
     "slug": "drakula",
     "version": "1.0.0",
+    "scheme": "drakula",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
