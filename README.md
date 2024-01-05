@@ -6,7 +6,7 @@
 
 ### Installation
 
-- Go to the root directory and run `yarn` to install dependencies.
+Go to the root directory and run `yarn` to install dependencies.
 
 ### Run web app
 
